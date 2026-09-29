@@ -180,7 +180,7 @@ async function handleLogin(event) {
             expiresAt: Date.now() + SESSION_LENGTH_MS
         }));
 
-        window.location.href = "index.html";
+        window.location.href = "dashboard.html";
     } catch (error) {
         setMessage("loginMessage", error.message || "로그인 중 오류가 발생했습니다.", true);
     }
